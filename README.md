@@ -219,8 +219,6 @@ Edit grid columns in `css/style.css`:
 
 ---
 
-## 🚀 Deploy Now
-
 **Choose your platform:**
 
 1. **Netlify** (Easiest): [netlify.com](https://netlify.com) - Drag & drop your folder
