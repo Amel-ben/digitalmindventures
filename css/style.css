@@ -427,3 +427,655 @@
       .hero p, .lead { font-size: 1rem; }
       .orb-card { display: none; }
     }
+
+
+/*
+=====================================================================
+DIGITALMIND VENTURES — DESIGN-ONLY UPGRADE
+Version: 2026-07-31
+
+HOW TO USE
+Paste this entire block at the VERY END of:
+css/style.css
+
+This code changes presentation only.
+It does not modify, hide or replace any website wording.
+=====================================================================
+*/
+
+:root {
+  --navy: #081a2f;
+  --navy-2: #102c4a;
+  --blue: #2563eb;
+  --cyan: #67d7ff;
+  --gold: #d3b06f;
+  --off: #f5f7fa;
+  --grey: #536071;
+  --line-dark: rgba(8, 26, 47, 0.11);
+  --shadow-soft: 0 18px 55px rgba(8, 26, 47, 0.08);
+  --shadow-strong: 0 28px 80px rgba(3, 13, 27, 0.28);
+  --radius-xl: 22px;
+  --radius-lg: 17px;
+  --radius-md: 12px;
+  --max: 1200px;
+}
+
+html {
+  scroll-padding-top: 84px;
+}
+
+body {
+  color: #132033;
+  background: var(--off);
+  font-family: Inter, "Aptos", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.58;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+#offers,
+#approach,
+#proof,
+#who,
+#contact {
+  scroll-margin-top: 84px;
+}
+
+/* ================================================================
+1. NAVIGATION
+================================================================ */
+
+.nav {
+  background: rgba(8, 26, 47, 0.93);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-inner {
+  height: 72px;
+}
+
+.brand-logo {
+  display: block;
+  width: auto;
+  height: 50px;
+}
+
+.nav-links {
+  gap: 3px;
+}
+
+.nav-links a {
+  padding: 9px 11px;
+  font-size: 0.88rem;
+  font-weight: 650;
+}
+
+.nav-cta {
+  margin-left: 9px;
+  padding-inline: 16px !important;
+  border-radius: 12px !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+}
+
+/* ================================================================
+2. HERO
+================================================================ */
+
+.hero {
+  padding: 92px 0 86px;
+  background:
+    radial-gradient(
+      circle at 76% 12%,
+      rgba(103, 215, 255, 0.2),
+      transparent 27%
+    ),
+    radial-gradient(
+      circle at 94% 80%,
+      rgba(211, 176, 111, 0.15),
+      transparent 25%
+    ),
+    linear-gradient(138deg, #061221 0%, #081a2f 54%, #113451 100%);
+}
+
+.hero-grid {
+  grid-template-columns: 1.12fr 0.88fr;
+  gap: clamp(44px, 6vw, 76px);
+}
+
+.eyebrow {
+  padding: 7px 11px;
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.055);
+  font-size: 0.77rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero-title-smaller {
+  max-width: 760px;
+  margin-top: 22px;
+  font-size: clamp(3rem, 5.25vw, 4.75rem);
+  line-height: 0.99;
+  letter-spacing: -0.062em;
+}
+
+.hero p {
+  max-width: 670px;
+  margin-top: 25px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: clamp(1.04rem, 1.45vw, 1.2rem);
+  line-height: 1.62;
+}
+
+.hero-actions {
+  margin-top: 30px;
+}
+
+.btn {
+  min-height: 50px;
+  padding: 13px 19px;
+  border-radius: 12px;
+}
+
+.btn-primary {
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  transform: translateY(-2px);
+}
+
+/* ================================================================
+3. HERO VISUAL
+================================================================ */
+
+.orb-card {
+  min-height: 470px;
+  padding: 26px;
+  overflow: hidden;
+  border-color: rgba(255, 255, 255, 0.13);
+  border-radius: 26px;
+  background: linear-gradient(
+    150deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.025)
+  );
+  box-shadow: var(--shadow-strong);
+}
+
+.orb-card::before {
+  opacity: 0.58;
+}
+
+.map-node {
+  width: 10px;
+  height: 10px;
+  box-shadow:
+    0 0 0 7px rgba(88, 211, 255, 0.1),
+    0 0 22px rgba(88, 211, 255, 0.58);
+}
+
+.node-2 {
+  box-shadow:
+    0 0 0 7px rgba(199, 167, 114, 0.11),
+    0 0 22px rgba(199, 167, 114, 0.52);
+}
+
+.glass-panel {
+  right: 26px;
+  bottom: 26px;
+  left: 26px;
+  padding: 21px;
+  border-radius: 18px;
+  background: rgba(4, 15, 28, 0.7);
+}
+
+.glass-panel h3 {
+  margin-bottom: 13px;
+  font-size: 1.25rem;
+  letter-spacing: -0.035em;
+}
+
+.signal-list {
+  gap: 12px;
+  font-size: 0.89rem;
+  line-height: 1.48;
+}
+
+/* ================================================================
+4. GLOBAL SECTION RHYTHM AND TYPOGRAPHY
+================================================================ */
+
+section {
+  padding: 88px 0;
+}
+
+.section-head {
+  align-items: start;
+  margin-bottom: 38px;
+}
+
+.section-kicker {
+  margin-bottom: 13px;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+}
+
+h2,
+.uniform-main-title,
+.section-title-smaller {
+  max-width: 710px;
+  font-size: clamp(2rem, 3.35vw, 3.25rem);
+  line-height: 1.03;
+}
+
+.lead {
+  color: #5d6878;
+  line-height: 1.62;
+}
+
+/* ================================================================
+5. GLOBAL CARD SYSTEM
+================================================================ */
+
+.card {
+  border-color: var(--line-dark);
+  border-radius: 20px;
+  box-shadow: 0 12px 36px rgba(8, 26, 47, 0.055);
+}
+
+.card,
+.mini,
+.metric,
+.mandate-card {
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease;
+}
+
+.card:hover,
+.mini:hover,
+.metric:hover,
+.mandate-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(37, 99, 235, 0.17);
+  box-shadow: 0 18px 46px rgba(8, 26, 47, 0.08);
+}
+
+/* ================================================================
+6. THE GAP WE SOLVE
+================================================================ */
+
+.problem {
+  padding-top: 96px;
+}
+
+.problem .card {
+  min-height: 270px;
+  background: #f8fafc;
+}
+
+.problem .card h3 {
+  font-size: 1.35rem;
+}
+
+.tag {
+  border-radius: 8px;
+  color: #164ca1;
+  background: #edf4ff;
+}
+
+/* ================================================================
+7. CORE OFFERS
+================================================================ */
+
+.audience-detail {
+  background: #f3f6f9;
+}
+
+.audience-tabs {
+  gap: 18px;
+}
+
+.audience-block {
+  position: relative;
+  grid-template-columns: 0.82fr 1.18fr;
+  gap: 25px;
+  padding: 30px;
+  overflow: hidden;
+  border-color: var(--line-dark);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.62);
+  box-shadow: 0 14px 42px rgba(8, 26, 47, 0.045);
+}
+
+.audience-block::before {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 4px;
+  background: linear-gradient(var(--blue), var(--cyan));
+  content: "";
+}
+
+.audience-block:nth-child(2)::before {
+  background: linear-gradient(var(--gold), #e6ca94);
+}
+
+.audience-block:nth-child(3)::before {
+  background: linear-gradient(#22a8a1, #65d0c8);
+}
+
+.audience-block h3 {
+  font-size: 1.43rem;
+}
+
+.mini-grid {
+  gap: 11px;
+}
+
+.mini {
+  min-height: 118px;
+  padding: 17px;
+  border-color: var(--line-dark);
+  border-radius: 14px;
+  box-shadow: none;
+}
+
+.mini strong {
+  line-height: 1.3;
+}
+
+.mini span {
+  font-size: 0.88rem;
+  line-height: 1.48;
+}
+
+/* ================================================================
+8. METHOD
+================================================================ */
+
+.approach {
+  background:
+    radial-gradient(
+      circle at 84% 20%,
+      rgba(103, 215, 255, 0.1),
+      transparent 25%
+    ),
+    var(--navy);
+}
+
+.timeline {
+  gap: 12px;
+}
+
+.step {
+  min-height: 258px;
+  padding: 25px;
+  border-radius: 18px;
+}
+
+.step::before {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 38px;
+  font-size: 0.84rem;
+}
+
+.step:not(:last-child)::after {
+  position: absolute;
+  z-index: 2;
+  top: 43px;
+  right: -10px;
+  width: 18px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+  content: "";
+}
+
+/* ================================================================
+9. EXPERIENCE
+================================================================ */
+
+.proof-experience {
+  background: #eef2f6;
+}
+
+.proof-experience .matrix {
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 42px;
+}
+
+.proof-experience .metric-grid {
+  gap: 12px;
+}
+
+.proof-experience .metric {
+  min-height: 166px;
+  padding: 27px;
+  border-color: var(--line-dark);
+  border-radius: 17px;
+  box-shadow: 0 12px 34px rgba(8, 26, 47, 0.05);
+}
+
+.proof-experience .metric strong {
+  color: var(--blue);
+}
+
+/* ================================================================
+10. EXAMPLE MANDATES
+================================================================ */
+
+.mandates-section {
+  background: #fff;
+}
+
+.mandate-grid {
+  gap: 14px;
+}
+
+.mandates-section .mandate-card {
+  min-height: 146px;
+  padding: 22px;
+  border-color: var(--line-dark);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(8, 26, 47, 0.045);
+}
+
+.mandates-section .mandate-card strong {
+  color: var(--navy);
+  font-size: 1.04rem;
+  line-height: 1.32;
+}
+
+/* ================================================================
+11. FINAL CTA
+================================================================ */
+
+.cta {
+  background:
+    radial-gradient(
+      circle at 78% 10%,
+      rgba(103, 215, 255, 0.18),
+      transparent 28%
+    ),
+    linear-gradient(140deg, var(--navy), #06101e);
+}
+
+.cta-box {
+  max-width: 920px;
+  padding: 44px;
+  border-radius: 24px;
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.2);
+}
+
+.cta-title-single {
+  max-width: 760px;
+  white-space: normal;
+}
+
+/* ================================================================
+12. ACCESSIBILITY
+================================================================ */
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--cyan);
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+/* ================================================================
+13. TABLET
+================================================================ */
+
+@media (max-width: 980px) {
+  .hero-grid,
+  .matrix,
+  .audience-block,
+  .cta-box {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-grid {
+    gap: 44px;
+  }
+
+  .orb-card {
+    min-height: 380px;
+  }
+
+  .proof-experience .matrix {
+    gap: 32px;
+  }
+
+  .step:not(:last-child)::after {
+    display: none;
+  }
+}
+
+/* ================================================================
+14. MOBILE
+================================================================ */
+
+@media (max-width: 760px) {
+  html {
+    scroll-padding-top: 76px;
+  }
+
+  #offers,
+  #approach,
+  #proof,
+  #who,
+  #contact {
+    scroll-margin-top: 76px;
+  }
+
+  .nav-inner {
+    height: 66px;
+  }
+
+  .nav-links {
+    top: 66px;
+  }
+
+  .brand-logo {
+    width: auto;
+    height: 42px;
+  }
+
+  .hero {
+    padding: 54px 0 72px;
+  }
+
+  .hero-title-smaller {
+    font-size: clamp(2.65rem, 12vw, 3.45rem);
+    line-height: 1;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  /*
+  The original CSS hides the complete hero visual on mobile.
+  These rules keep a compact version visible.
+  */
+  .orb-card {
+    display: block;
+    min-height: 270px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .orb-card .map-node {
+    display: none;
+  }
+
+  .glass-panel {
+    right: 18px;
+    bottom: 18px;
+    left: 18px;
+    padding: 17px;
+  }
+
+  .glass-panel h3 {
+    font-size: 1.12rem;
+  }
+
+  .signal-list {
+    gap: 9px;
+    font-size: 0.8rem;
+  }
+
+  section {
+    padding: 68px 0;
+  }
+
+  .problem {
+    padding-top: 72px;
+  }
+
+  .card,
+  .audience-block,
+  .cta-box {
+    padding: 23px;
+    border-radius: 18px;
+  }
+
+  .problem .card {
+    min-height: auto;
+  }
+
+  .audience-block {
+    gap: 22px;
+  }
+
+  .proof-experience .matrix {
+    gap: 30px;
+  }
+
+  .cta-box {
+    padding: 25px;
+  }
+}
